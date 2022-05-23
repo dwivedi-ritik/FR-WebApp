@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block head %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index_style.css') }}">
+{% endblock %}
+{% block content %}
+<div class="hero-body">
+    <div class="container has-text-centered">
+    <div class="sections">
+        <div class="container">
+            <div class="columns is-vcentered mt-60 mb-60">
+                <div class="column is-5">
+                    <h4 class="title feature-title dark-text no-margin is-centered-tablet-portrait">Hi , {{ name }}</h4>
+                    <br>
+                    <p class="section-feature-description is-centered-tablet-portrait">
+                        Build your UI faster than ever. The editor gives you access to over 200 CSS responsive components, based on Bulma CSS Framework. It's all free and open-source.
+                    </p>
+                    <br>
+                    <form method="post" action="">
+                        <input type="submit" class="button secondary-btn is-rounded raised action-button" value="Start Attendence">
+                    </form>        
+                </div>
+                <div class="column is-8  is-hidden-mobile loaded">
+                    <img src="{{ url_for('static', filename='images/face_vec3.png') }}" width="50%">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
+    <path fill="#0099ff" fill-opacity="1" d="M0,64L48,53.3C96,43,192,21,288,37.3C384,53,480,107,576,117.3C672,128,768,96,864,85.3C960,75,1056,85,1152,80C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/app_runner.js') }}"></script> -->
+{% endblock %}

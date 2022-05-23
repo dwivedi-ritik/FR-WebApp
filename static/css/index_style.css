@@ -1,0 +1,13 @@
+
+.secondary-btn{
+	background-color: #fa9746;
+	color: white;	
+}
+.secondary-btn:hover{
+	color: white;
+	box-shadow: 1px 1px;
+}
+.wave {
+	margin-top: -5%;
+	width: 100%;
+}

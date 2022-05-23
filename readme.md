@@ -1,0 +1,1 @@
+Extended version of this old [app](https://github.com/dwivedi-ritik/Attendence-Using-Facial-Recognition)

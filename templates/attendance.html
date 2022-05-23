@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero-body">
+    <div class="container has-text-centered">
+    <div class="sections">
+        <div class="container">
+            <div class="columns is-vcentered mt-60 mb-60">
+                <div class="column is-5">
+                    <h4 class="title feature-title dark-text no-margin is-centered-tablet-portrait">Hi , {{ name }}</h4>
+                    <br>
+                    <p class="section-feature-description is-centered-tablet-portrait">
+                        Build your UI faster than ever. The editor gives you access to over 200 CSS responsive components, based on Bulma CSS Framework. It's all free and open-source.
+                    </p>
+                    <br>
+                    <a href="{{ url_for('download' , file_url=file_url) }}" class="button secondary-btn is-rounded raised action-button">Download CSV</a>
+                </div>
+                <div class="column is-8  is-hidden-mobile loaded">
+                    <img src="{{ url_for('static', filename='images/face_vec3.png') }}" width="50%">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock %}
